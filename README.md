@@ -19,9 +19,7 @@ The inventors of this game are *Ralph H. Baer* and *Howard J. Morrison*.
  - HTML
 
 
-
-
-![Simon Board Game](https://i.postimg.cc/PxXsFN8J/board-Game.png)
+<img src="https://i.postimg.cc/PxXsFN8J/board-Game.png" alt="Simon Board Game" width="400"/>
 
 
 
