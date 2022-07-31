@@ -9,24 +9,24 @@ $(".play-button").click(function(){
   $(".menu").addClass("hide");
   $(".game").removeClass("hide");
   $("body").addClass("image");
-  $("#level-title").text("Press Any Key to begin");
-  $(document).keydown(function() {
-    if (!started) {
-      $("#level-title").text("Level " + level);
-      nextSequence();
-      started = true;
-    }
-  });
+  play();
   $(".back-button").removeClass("hide").click(function(){
     $(".back-button").addClass("hide");
     $(".game").addClass("hide");
       $(".menu").removeClass("hide");
       $("body").removeClass("image");
       $("#level-title").text("simon");
+      startOver();
   });
 });
 
-
+function play() {
+  if (!started) {
+    $("#level-title").text("Level " + level);
+    nextSequence();
+    started = true;
+  }
+}
 
 
 $(".btn").click(function(){
