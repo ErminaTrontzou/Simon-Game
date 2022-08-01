@@ -1,141 +1,125 @@
 body {
-  text-align: center;
-  background-color: #011F3F;
-  background-image: url("images/background.png");
-  background-size: cover;
+    text-align: center;
+    background-color: #011F3F;
+    background-image: url("images/background.png");
+    background-size: cover;
 }
 
-.image{
-  background-image: url("images/background-blurred.png");
-  background-size: cover;
+.image {
+    background-image: url("images/background-blurred.png");
+    background-size: cover;
 }
 
-.hide{
-  display: none !important;
+.hide {
+    display: none !important;
 }
 
 #level-title {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 5rem;
-  color: #2C2E3E;
-  margin-bottom: 0px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem;
+    color: #2C2E3E;
+    margin-bottom: 0px;
 }
 
-.play-button{
-  background-color:#de4935;
-	border-radius:28px;
-	border:1px solid #de4935;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:23px;
-	font-weight:bold;
-	padding:6px 76px;
-	text-decoration:none;
-	text-shadow:-2px 4px 2px #2f6627;
-  margin-bottom: 30px;
-  margin-top: 50px;
+.navg {
+    background-color: #de4935;
+    border: 1px solid #de4935;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial, serif;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: -2px 4px 2px #2f6627;
 }
 
-.howToPlay-button{
-  background-color: #de4935;
-	border-radius:20px;
-	border:1px solid #de4935;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:23px;
-	font-weight:bold;
-	padding:6px 38px;
-	text-decoration:none;
-	text-shadow:-2px 4px 2px #2f6627;
-  margin-bottom: 30px;
+.play-button {
+    border-radius: 28px;
+    padding: 6px 76px;
+    margin-bottom: 30px;
+    margin-top: 50px;
 }
 
-.about-button{
-background-color:#de4935;
-border-radius:28px;
-border:1px solid #de4935;
-display:inline-block;
-cursor:pointer;
-color:#ffffff;
-font-family:Arial;
-font-size:23px;
-font-weight:bold;
-padding:6px 70px;
-text-decoration:none;
-text-shadow:-2px 4px 2px #2f6627;
+.howToPlay-button {
+
+    border-radius: 20px;
+
+    padding: 6px 38px;
+
+    margin-bottom: 30px;
 }
 
-.back-button{
-  position:absolute;
-background-color:#de4935;
-border-radius:28px;
-border:1px solid #de4935;
-display:inline-block;
-cursor:pointer;
-color:#ffffff;
-font-family:Arial;
-font-size:23px;
-font-weight:bold;
-padding:6px 70px;
-text-decoration:none;
-text-shadow:-2px 4px 2px #2f6627;
-top:0;
-left:0;
+.about-button {
 
+    border-radius: 28px;
+
+    padding: 6px 70px;
+}
+
+.back-button {
+    position: absolute;
+    border-radius: 28px;
+    padding: 6px 70px;
+    top: 0;
+    left: 0;
+}
+
+.replay-button {
+    position: absolute;
+    border-radius: 28px;
+    padding: 6px 70px;
+    top: 0;
+    right: 0;
 }
 
 
 .container {
-  display: block;
-  width: 50%;
-  margin: auto;
+    display: block;
+    width: 50%;
+    margin: auto;
 
 }
 
 .btn {
-  margin: 40px 45px 45px;
-  display: inline-block;
-  height: 150px;
-  width: 180px;
-  border-bottom: 100px solid ;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
+    margin: 40px 45px 45px;
+    display: inline-block;
+    height: 150px;
+    width: 180px;
+    border-bottom: 100px solid;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
 }
-
 
 
 .game-over {
-  background-color: red;
-  opacity: 0.8;
+    background-color: red;
+    opacity: 0.8;
 }
 
 .red {
-  color: red;
-  transform: rotate(40deg);
+    color: red;
+    transform: rotate(40deg);
 }
 
 .green {
-  color: green;
-  transform: rotate(320deg);
+    color: green;
+    transform: rotate(320deg);
 }
 
 .blue {
-  color: blue;
-   transform: scaleY(-1);
-   transform: rotate(140deg);
+    color: blue;
+    transform: scaleY(-1);
+    transform: rotate(140deg);
 }
 
 .yellow {
-  color: yellow;
-   transform: scaleY(-1);
-   transform: rotate(220deg);
+    color: yellow;
+    transform: scaleY(-1);
+    transform: rotate(220deg);
 }
 
 .pressed {
-  box-shadow: 0 0 20px white;
-  background-color: grey;
+    box-shadow: 0 0 20px white;
+    background-color: grey;
 }
