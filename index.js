@@ -17,6 +17,7 @@ $(".replay-button").click(function (){
   startOver();
   play();
   $(this).addClass("hide");
+  $("body").removeClass("game-over");
 
 })
 
@@ -78,9 +79,6 @@ function checkAnswer(currentLevel) {
       $(".replay-button").removeClass("hide");
       $("body").addClass("game-over");
       $("#level-title").text("Game Over");
-      setTimeout(function () {
-        $("body").removeClass("game-over");
-      }, 200);
     }
 }
 
