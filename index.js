@@ -21,10 +21,17 @@ $(".replay-button").click(function (){
 })
 
 $(".howToPlay-button").click(function (){
+  $("#level-title").text("How to Play");
   $(".menu").addClass("hide");
   $(".htp-text").removeClass("hide");
   back();
+})
 
+$(".about-button").click(function (){
+  $("#level-title").text("About");
+  $(".menu").addClass("hide");
+  $(".about-text").removeClass("hide");
+  back();
 })
 
 $(".btn").click(function(){
@@ -41,7 +48,7 @@ function back(){
     $(".game").addClass("hide");
     $(".menu").removeClass("hide");
     $(".htp-text").addClass("hide");
-
+    $(".about-text").addClass("hide");
     $("body").removeClass("image");
     $("#level-title").text("simon");
     startOver();
