@@ -3,6 +3,7 @@ body {
     background-color: #011F3F;
     background-image: url("images/background.png");
     background-size: cover;
+
 }
 
 .image {
@@ -19,6 +20,13 @@ body {
     font-size: 5rem;
     color: #2C2E3E;
     margin-bottom: 0px;
+}
+
+.htp-text{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    background-color: #FF8B8B;
 }
 
 .navg {
@@ -42,18 +50,13 @@ body {
 }
 
 .howToPlay-button {
-
     border-radius: 20px;
-
     padding: 6px 38px;
-
     margin-bottom: 30px;
 }
 
 .about-button {
-
     border-radius: 28px;
-
     padding: 6px 70px;
 }
 
@@ -82,9 +85,8 @@ body {
 }
 
 .btn {
-    margin: 40px 45px 45px;
     display: inline-block;
-    height: 150px;
+    height: 50px;
     width: 180px;
     border-bottom: 100px solid;
     border-left: 25px solid transparent;
@@ -98,25 +100,36 @@ body {
 }
 
 .red {
+    position: fixed;
     color: red;
     transform: rotate(40deg);
+    right: calc(30% + 0px);
 }
 
 .green {
+    position: fixed;
     color: green;
     transform: rotate(320deg);
+    left:calc(30% + 0px);
+
 }
 
 .blue {
+    position: fixed;
     color: blue;
     transform: scaleY(-1);
     transform: rotate(140deg);
+    top:calc(60%);
+    right:calc(30% + 0px);
 }
 
 .yellow {
+    position: fixed;
     color: yellow;
     transform: scaleY(-1);
     transform: rotate(220deg);
+    top:calc(60%);
+    left:calc(30% + 0px);
 }
 
 .pressed {

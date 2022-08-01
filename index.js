@@ -10,20 +10,43 @@ $(".play-button").click(function(){
   $(".game").removeClass("hide");
   $("body").addClass("image");
   play();
-  $(".back-button").removeClass("hide").click(function(){
-    $(".back-button").addClass("hide");
-    $(".game").addClass("hide");
-      $(".menu").removeClass("hide");
-      $("body").removeClass("image");
-      $("#level-title").text("simon");
-      startOver();
-  });
+  back();
 });
 
 $(".replay-button").click(function (){
   startOver();
   play();
+  $(this).addClass("hide");
+
 })
+
+$(".howToPlay-button").click(function (){
+  $(".menu").addClass("hide");
+  $(".htp-text").removeClass("hide");
+  back();
+
+})
+
+$(".btn").click(function(){
+  let userChosenColour = $(this).attr("id");
+  userClickedPattern.push(userChosenColour);
+  playSound(userChosenColour);
+  animatePress(userChosenColour);
+  checkAnswer(userClickedPattern.length-1);
+});
+
+function back(){
+  $(".back-button").removeClass("hide").click(function(){
+    $(".back-button").addClass("hide");
+    $(".game").addClass("hide");
+    $(".menu").removeClass("hide");
+    $(".htp-text").addClass("hide");
+
+    $("body").removeClass("image");
+    $("#level-title").text("simon");
+    startOver();
+  });
+}
 
 function play() {
   if (!started) {
@@ -34,13 +57,6 @@ function play() {
 }
 
 
-$(".btn").click(function(){
-  let userChosenColour = $(this).attr("id");
-  userClickedPattern.push(userChosenColour);
-  playSound(userChosenColour);
-  animatePress(userChosenColour);
-  checkAnswer(userClickedPattern.length-1);
-});
 
 function checkAnswer(currentLevel) {
     if (gamePattern[currentLevel] === userClickedPattern[currentLevel]) {
@@ -89,3 +105,20 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
+
+$(window).on('resize', function(){
+  var conwidth = $('.container').width()/2 - 30;
+  $(".red").css('right','calc(30% + '+conwidth+'px)');
+});
+$(window).on('resize', function(){
+  var conwidth = $('.container').width()/2 - 30;
+  $(".green").css('left','calc(30% + '+conwidth+'px)');
+});
+$(window).on('resize', function(){
+  var conwidth = $('.container').width()/2 - 30;
+  $(".blue").css('right','calc(30% + '+conwidth+'px)');
+});
+$(window).on('resize', function(){
+  var conwidth = $('.container').width()/2 - 30;
+  $(".yellow").css('left','calc(30% + '+conwidth+'px)');
+});
