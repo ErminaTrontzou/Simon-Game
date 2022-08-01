@@ -51,6 +51,7 @@ function back(){
     $(".about-text").addClass("hide");
     $("body").removeClass("image");
     $("#level-title").text("simon");
+    $(".replay-button").addClass("hide");
     startOver();
   });
 }
