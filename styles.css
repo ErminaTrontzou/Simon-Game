@@ -79,12 +79,12 @@ body {
 
 
 
-.container {
-    display: block;
-    width: 100%;
-    height:80%;
-    margin: auto;
-
+.container2 {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    padding-top: 60px;
+    align-content: space-between;
 }
 
 .btn {
@@ -94,48 +94,49 @@ body {
     border-bottom: 100px solid;
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
+    margin: 20px;
+
+}
+
+.by{
+    padding-top: 80px;
 }
 
 
 .game-over {
     background-color: red;
     opacity: 0.8;
+
 }
 
 .red {
-    position: fixed;
     color: red;
     transform: rotate(40deg);
-    right: calc(30% + 0px);
+    justify-content: space-around;
+
 }
 
 .green {
-    position: fixed;
     color: green;
     transform: rotate(320deg);
-    left:calc(30% + 0px);
+    justify-content: space-around;
 
 }
 
 .blue {
-    position: fixed;
     color: blue;
     transform: scaleY(-1);
     transform: rotate(140deg);
-    top:calc(60%);
-    right:calc(30% + 0px);
 }
 
 .yellow {
-    position: fixed;
     color: yellow;
     transform: scaleY(-1);
     transform: rotate(220deg);
-    top:calc(60%);
-    left:calc(30% + 0px);
 }
 
 .pressed {
     box-shadow: 0 0 20px white;
     background-color: grey;
 }
+

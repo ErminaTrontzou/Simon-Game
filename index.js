@@ -111,20 +111,3 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
-
-$(window).on('resize', function(){
-  var conwidth = $('.container').width()/2 - 30;
-  $(".red").css('right','calc(30% + '+conwidth+'px)');
-});
-$(window).on('resize', function(){
-  var conwidth = $('.container').width()/2 - 30;
-  $(".green").css('left','calc(30% + '+conwidth+'px)');
-});
-$(window).on('resize', function(){
-  var conwidth = $('.container').width()/2 - 30;
-  $(".blue").css('right','calc(30% + '+conwidth+'px)');
-});
-$(window).on('resize', function(){
-  var conwidth = $('.container').width()/2 - 30;
-  $(".yellow").css('left','calc(30% + '+conwidth+'px)');
-});
